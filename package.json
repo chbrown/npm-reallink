@@ -1,6 +1,6 @@
 {
   "name": "npm-reallink",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "npm link but for real",
   "keywords": [
     "npm",
