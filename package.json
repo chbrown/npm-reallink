@@ -1,0 +1,31 @@
+{
+  "name": "npm-reallink",
+  "version": "0.0.0",
+  "description": "npm link but for real",
+  "keywords": [
+    "npm",
+    "development"
+  ],
+  "homepage": "https://github.com/chbrown/npm-reallink",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chbrown/npm-reallink.git"
+  },
+  "license": "MIT",
+  "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
+  "dependencies": {
+    "async": "1.5.2",
+    "minimatch": "3.0.0"
+  },
+  "devDependencies": {
+    "declarations": "*",
+    "typescript": "*"
+  },
+  "bin": {
+    "npm-reallink": "bin/npm-reallink"
+  },
+  "scripts": {
+    "prepublish": "node_modules/.bin/tsc",
+    "compile": "node_modules/.bin/tsc"
+  }
+}

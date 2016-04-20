@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+var index = require('..');
+
+if (process.argv.length > 2) {
+  console.error('npm-reallink does not allow command line arguments');
+  process.exit(1);
+}
+
+var source_dir = process.cwd();
+index.realLink(source_dir, function(error) {
+  if (error) {
+    console.error('npm-reallink failed: %s', error);
+    return process.exit(1);
+  }
+  process.exit(0);
+});
