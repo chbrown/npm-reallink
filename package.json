@@ -18,8 +18,8 @@
     "minimatch": "3.0.0"
   },
   "devDependencies": {
-    "declarations": "*",
-    "typescript": "*"
+    "declarations": "0.1.12",
+    "typescript": "1.8.10"
   },
   "bin": {
     "npm-reallink": "bin/npm-reallink"
